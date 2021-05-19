@@ -1,0 +1,48 @@
+$primary-color: hsl(0, 100%, 70%);
+$secondary-color: hsl(191, 100%, 40%);
+$dark-color: hsl(234, 30%, 18%);
+$light-color: hsl(210, 14%, 58%);
+
+.card {
+  position: relative;
+  height: 180px;
+  display: flex;
+  gap: 1rem;
+  img {
+    height: inherit;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .heading {
+      font-size: 30px;
+      font-weight: 700;
+      line-height: 44px;
+      color: $dark-color;
+    }
+
+    > div {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 1rem;
+      span:nth-child(1) {
+        color: #fff;
+        background-color: $dark-color;
+        font-size: 15px;
+        font-weight: 800;
+        padding: 1px 9px;
+        border-radius: 10000px;
+      }
+      span:nth-child(2) {
+        font-size: 15px;
+        font-weight: 400;
+        color: $light-color;
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  $primary-color: hsl(0, 100%, 70%);
+  $secondary-color: hsl(191, 100%, 40%);
+  $dark-color: hsl(234, 30%, 18%);
+  $light-color: hsl(210, 14%, 58%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Heebo", sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #000;
+  background-color: #fff;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
