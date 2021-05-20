@@ -49,7 +49,7 @@ export default function Work() {
       justify='space-between'
     >
       <Grid item xs={12} sm={12} md={12}>
-        <span className={styles.heading}>Blogs</span>
+        <span className={styles.heading}>Work</span>
       </Grid>
       {featureWorksData.map((work) => (
         <Grid

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Grid, Card, Button } from "@material-ui/core";
+import { motion } from "framer-motion";
 import styles from "./contact.module.scss";
 import ContactSVG from "../../Images/Icons/undraw_contact_us_15o2.svg";
 export default function Contact() {
@@ -7,8 +8,23 @@ export default function Contact() {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   return (
-    <div className={styles.mainContainer}>
-      <span style={{ fontSize: "3rem", fontWeight: 600 }}>Contact Me</span>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ when: "beforeChildren", staggerChildren: 0.4, duration: 1 }}
+      className={styles.mainContainer}
+    >
+      <span
+        style={{
+          fontSize: "44px",
+          fontWeight: 700,
+          lineHeight: "60px",
+          marginTop: "1.5rem",
+        }}
+      >
+        Contact Me
+      </span>
       <div style={{ display: "grid", placeItems: "center" }}>
         <img src={ContactSVG} className={styles.contactSVG} alt='contact me' />
         <Card elevation={3} className={styles.card}>
@@ -56,6 +72,6 @@ export default function Contact() {
           </Grid>
         </Card>
       </div>
-    </div>
+    </motion.div>
   );
 }

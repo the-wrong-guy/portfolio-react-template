@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { IconButton, useMediaQuery } from "@material-ui/core";
+import { Button, IconButton, useMediaQuery } from "@material-ui/core";
 import { Link, useHistory, useLocation } from "react-router-dom";
 import { motion, AnimateSharedLayout, AnimatePresence } from "framer-motion";
 //Icons

@@ -97,6 +97,11 @@
   background-color: bisque;
   // gap: 1rem;
   a {
+    text-align: center;
+    width: 100%;
+    overflow: visible;
+    backface-visibility: hidden;
+    background-color: transparent;
     color: #000;
     position: relative;
     font-size: 20px;
@@ -104,6 +109,9 @@
     line-height: 29px;
     text-decoration: none;
     padding: 10px 5px;
+    &:focus {
+      background-color: transparent;
+    }
   }
 }
 
