@@ -10,6 +10,42 @@
   }
 }
 
+@media only screen and (max-width: 1206px) {
+  .container {
+    padding: 2rem 15%;
+  }
+}
+
+@media only screen and (max-width: 1106px) {
+  .container {
+    padding: 2rem 13%;
+  }
+}
+
+@media only screen and (max-width: 1045px) {
+  .container {
+    padding: 2rem 10%;
+  }
+}
+
+@media only screen and (max-width: 970px) {
+  .container {
+    padding: 2rem 7%;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  .container {
+    padding: 2rem 5%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    padding: 0rem 0;
+  }
+}
+
 .heading {
   font-size: 44px;
   font-weight: 700;

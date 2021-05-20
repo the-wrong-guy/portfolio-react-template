@@ -13,7 +13,7 @@ const blogsData = [
     type: "Programming,Javascript",
   },
   {
-    title: "What si Node.js?",
+    title: "What is Node.js?",
     type: "Programming,Node Js",
   },
   {
@@ -36,7 +36,7 @@ export default function Blog() {
       }}
       className={styles.container}
       container
-      spacing={2}
+      spacing={3}
       justify='space-between'
     >
       <Grid item xs={12} sm={12} md={12}>
@@ -61,9 +61,7 @@ export default function Blog() {
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Expedita ipsam totam voluptatibus aliquam blanditiis officiis
                 nesciunt non, optio hic consequatur aperiam ab aspernatur
-                laborum ducimus repellendus quibusdam et sequi? Deserunt! Lorem
-                ipsum dolor sit amet consectetur adipisicing elit.
-                Exercitationem, quod!
+                laborum ducimus repellendus quibusdam et sequi? Deserunt!
               </span>
             </CardActionArea>
           </Card>

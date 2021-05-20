@@ -1,0 +1,43 @@
+.mainContainer {
+  position: relative;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  gap: 3rem;
+}
+.card {
+  width: 380px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0.5rem;
+  border-radius: 10px !important;
+  .gridContainer {
+    margin: 0 !important;
+    width: 100% !important;
+  }
+}
+
+.messageInput,
+.emailInput,
+.nameInput {
+  flex: 1;
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+.emailInput,
+.nameInput {
+  height: 3rem;
+}
+
+.sendBtn {
+  background-color: #ff6666 !important;
+  text-transform: none !important;
+}
+
+.contactSVG {
+  height: 100px;
+  margin: 0 auto;
+}

@@ -1,3 +1,6 @@
+@mixin a-tag-animation {
+}
+
 .mainContainer {
   position: relative;
   width: 100%;
@@ -82,8 +85,30 @@
   }
 }
 
+@media only screen and (max-width: 910px) {
+  .header {
+    padding: 1.6rem 2rem;
+  }
+}
+
+.mobileMenu {
+  display: grid;
+  justify-items: center;
+  background-color: bisque;
+  // gap: 1rem;
+  a {
+    color: #000;
+    position: relative;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 29px;
+    text-decoration: none;
+    padding: 10px 5px;
+  }
+}
+
 @media only screen and (max-width: 650px) {
   .header {
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 0rem;
   }
 }
