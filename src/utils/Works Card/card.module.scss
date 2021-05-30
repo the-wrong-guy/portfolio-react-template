@@ -54,5 +54,9 @@ $light-color: hsl(210, 14%, 58%);
     div {
       gap: 0.2rem;
     }
+
+    img {
+      max-height: 324px;
+    }
   }
 }
