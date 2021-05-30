@@ -4,9 +4,9 @@ import { motion } from "framer-motion";
 import styles from "./contact.module.scss";
 import ContactSVG from "../../Images/Icons/undraw_contact_us_15o2.svg";
 export default function Contact() {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
+  const [name, setName] = useState<string>("");
+  const [email, setEmail] = useState<string>("");
+  const [message, setMessage] = useState<string>("");
   return (
     <motion.div
       initial={{ opacity: 0 }}

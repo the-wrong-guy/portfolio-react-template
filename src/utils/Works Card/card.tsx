@@ -8,6 +8,12 @@ const transition = { duration: 0.5, ease: [0.43, 0.13, 0.23, 0.96] };
 const imageVariant = {
   hover: { scale: 0.9 },
 };
+
+interface Props {
+  img: string;
+  heading: string;
+  type: string;
+}
 export default function WorkCard(props: any) {
   return (
     <Card className={styles.card} elevation={0}>

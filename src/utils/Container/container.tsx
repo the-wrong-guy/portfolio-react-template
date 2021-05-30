@@ -19,7 +19,7 @@ export default function Container(props: {
     | null
     | undefined;
 }) {
-  const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [isMobileMenuOpen, setMobileMenuOpen] = useState<boolean>(false);
   const history = useHistory();
   const location = useLocation();
   const matches = useMediaQuery("(max-width:650px)");
@@ -86,6 +86,7 @@ export default function Container(props: {
               exit={{
                 opacity: 0,
                 height: 0,
+                transition: { when: "afterChildren" },
               }}
               transition={{ duration: 0.5, staggerChildren: 0.3 }}
               className={styles.mobileMenu}
